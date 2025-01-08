@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>About Me</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+            color: #333;
+            background-image: url('background 1.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the image covers the whole page */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Makes the background image fixed */
+            min-height: 150vh; /* Ensures the page takes at least the full height of the screen */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #3458bd; /* Dark Blue */
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            font-weight: 600;
+        }
+
+        nav {
+            background-color: #6996dd; /* Lighter Blue */
+            padding: 15px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 50px 20px;
+            min-height: 100vh;
+            background-color: #f7f7f7;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 3em;
+            color: #2e75e7;
+            text-align: center;
+            margin-bottom: 50px;
+            font-weight: 600;
+        }
+
+        /* Grid layout for about section */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 50px;
+        }
+
+        .about-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .about-content img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 5px solid #3458bd;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .about-content img:hover {
+            transform: scale(1.05);
+        }
+
+        .about-content p {
+            font-size: 1.2em;
+            color: #333;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        /* Image gallery section */
+        .image-gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-top: 60px;
+        }
+
+        .image-gallery div {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .image-gallery div:hover {
+            transform: scale(1.05);
+        }
+
+        .image-gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s ease;
+        }
+
+        .image-gallery div:hover img {
+            opacity: 0.8;
+        }
+
+        /* Footer Section */
+        .footer {
+            background-color: #1E3A8A;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .image-gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>AISYAH'S PROFILE</h1>
+        <p>Let's discover about my passion :3 </p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about me.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="studio.html">Studio</a>
+        <a href="family.html">Azman's</a>
+        <a href="pet.html">Buddy</a>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <div class="container">
+            <h2>About Me</h2>
+
+            <!-- About Grid: Left Profile Image and Right Description -->
+            <div class="about-grid">
+                <!-- Profile Section -->
+                <div class="about-content">
+                    <img src="aisyah mini.jpg" alt="Aisyah's Profile Picture">
+                    <p>Hi! I am Aisyah but most people called me ecaa. I was born in 10 September 2004. I was born and raised in Pontian, Johor</p>
+                </div>
+
+                <!-- Description Section -->
+                <div class="about-content">
+                    <h3>Life Story</h3>
+                    <p>Since I was a kid,I have always had a strong passion in reading books. Over the years, I have collected many books from many genre. Most of the time I prefer to read a book from rom-com and thriller genre.</p>
+                    <p>Besides, I enjoy doing extreme activity and connect with nature.I can also enjoy my time alone by listening to music and watching movie</p>
+                </div>
+            </div>
+
+            <!-- Image Gallery Section -->
+            <h2>My Interests</h2>
+            <div class="image-gallery">
+                <div><img src="novel.jpg" alt="Hobby 1"></div>
+                <div><img src="raya with kids.jpg" alt="Hobby 2"></div>
+                <div><img src="food 2.jpg" alt="Hobby 3"></div>
+                <div><img src="debate.jpg" alt="Project 1"></div>
+                <div><img src="Hockey.jpg" alt="Project 2"></div>
+                <div><img src="Hobittoon 4.jpg" alt="Project 3"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <div class="footer">
+        <p>2025 Aisyah Azman | All Rights Reserved</p>
+    </div>
+
+</body>
+</html>
