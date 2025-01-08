@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Skills</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a6cff3;
+            color: #ffffff;
+            background-image: url('background 2.jpg'); /* Replace with your image URL */
+            background-size: cover; /* Ensures the image covers the whole page */
+            background-position: center; /* Centers the image */
+            background-attachment: fixed; /* Makes the background image fixed */
+            min-height: 150vh; /* Ensures the page takes at least the full height of the screen */
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            background-color: #3458bd; /* Dark Blue */
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3em;
+        }
+
+        nav {
+            background-color: #6996dd; /* Lighter Blue */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            padding: 40px;
+            min-height: 1200px; /* Increased height for better scrolling */
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            color: #2e75e7;
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2.5em;
+        }
+
+        /* Skills Table */
+        .skills-table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+
+        .skills-table th, .skills-table td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: center;
+        }
+
+        .skills-table th {
+            background-color: #3458bd;
+            color: white;
+        }
+
+        .skills-table tr:nth-child(even) {
+            background-color: #6e98f1;
+        }
+
+        .skills-table tr:hover {
+            background-color: #ddd;
+        }
+
+        /* Proficiency Circles */
+        .circle {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #f0f8ff;
+            border: 5px solid #3458bd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            margin: 0 auto;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .circle span {
+            position: absolute;
+            font-size: 18px;
+            color: #3458bd;
+        }
+
+        /* Skill Cards Section */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .card {
+            width: 30%;
+            padding: 20px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 4px solid #3458bd;
+        }
+
+        .card h4 {
+            margin-top: 15px;
+            color: #3458bd;
+        }
+
+        .card p {
+            color: #2c258b;
+        }
+
+        footer {
+            background-color: #1E3A8A;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>AISYAH'S POWER</h1>
+        </div>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about me.html">About Me</a>
+        <a href="education.html">Education</a>
+        <a href="skills.html">Skills</a>
+        <a href="studio.html">Studio</a>
+        <a href="family.html">Azman's</a>
+        <a href="pet.html">Buddy</a>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <h2>My Skills</h2>
+
+            <!-- Skills Table -->
+            <table class="skills-table">
+                <thead>
+                    <tr>
+                        <th>Skill</th>
+                        <th>Description</th>
+                        <th>Proficiency</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Management</td>
+                        <td>Manage my life routine with a structured plan. Apply work life balance in my daily life</td>
+                        <td><div class="circle"><span>85%</span></div></td>
+                    </tr>
+                    <tr>
+                        <td>Soft skills</td>
+                        <td>Beginner in using Adobe Premiere Pro, Canva, and Capcut to create interesting design using video and images</td>
+                        <td><div class="circle"><span>60%</span></div></td>
+                    </tr>
+                    <tr>
+                        <td>Social Skills</td>
+                        <td>Experienced in organizing, communicating, and working with other people. Make a lot of connection for better work.</td>
+                        <td><div class="circle"><span>80%</span></div></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <!-- Skill Cards with Pictures -->
+            <section>
+                <h3>Skills Gained</h3>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="Netball GS.jpg" alt="netball GS">
+                        <h4>Netball</h4>
+                        <p>Play well as Goal Shooter in Netball. Participated in several tournaments since primary.</p>
+                    </div>
+                    <div class="card">
+                        <img src="FloorBall.jpg" alt="FloorBall">
+                        <h4>FloorBall</h4>
+                        <p>Skilled in defending for FloorBall match. Exposed with this sport since 2020 and also involved at the state level.</p>
+                    </div>
+                    <div class="card">
+                        <img src="taekwondo.jpg" alt="debate">
+                        <h4>Martial Arts</h4>
+                        <p>Joined Taekwondo Martial Art Club at 2018. Participated taekwondo tournament at ITF National Level in Yellow Belt Category  </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>2025 Aisyah Azman | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
